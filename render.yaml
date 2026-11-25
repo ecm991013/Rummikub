@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: rummikub-online
+    runtime: node
+    plan: free
+    buildCommand: unzip -o Rummikub_Online.zip -d . && npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
