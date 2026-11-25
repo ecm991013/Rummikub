@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     buildCommand: unzip -o Rummikub_Online_Seleccion_Con_Bordes_y_Toques.zip -d . && cd Rummikub_fix && npm install
-    startCommand: cd Rummikub_Online && npm start
+    startCommand: cd Rummikub_fix && npm start
     healthCheckPath: /api/ping
     envVars:
       - key: NODE_ENV
