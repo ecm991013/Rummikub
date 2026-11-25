@@ -5,7 +5,7 @@ services:
     plan: free
     buildCommand: unzip -o Rummikub_Online.zip -d . && cd Rummikub_Online && npm install
     startCommand: cd Rummikub_Online && npm start
-    healthCheckPath: /
+    healthCheckPath: /api/ping
     envVars:
       - key: NODE_ENV
         value: production
