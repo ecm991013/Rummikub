@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: rummikub-online
+    name: Rummikub
     runtime: node
     plan: free
     buildCommand: unzip -o Rummikub.zip -d . && cd Rummikub_Online && npm install
